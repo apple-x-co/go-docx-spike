@@ -2,3 +2,5 @@ github.com/fumiama/go-docx v0.0.0-20250506085032-0c30fd09304b h1:/mxSugRc4SgN7Xg
 github.com/fumiama/go-docx v0.0.0-20250506085032-0c30fd09304b/go.mod h1:ssRF0IaB1hCcKIObp3FkZOsjTcAHpgii70JelNb4H8M=
 github.com/fumiama/imgsz v0.0.2 h1:fAkC0FnIscdKOXwAxlyw3EUba5NzxZdSxGaq3Uyfxak=
 github.com/fumiama/imgsz v0.0.2/go.mod h1:dR71mI3I2O5u6+PCpd47M9TZptzP+39tRBcbdIkoqM4=
+github.com/gomutex/godocx v0.1.5 h1:jAqGmlGnvid1GmrgJulYx/yPnrlr2jzA5LGpOy7Z6AM=
+github.com/gomutex/godocx v0.1.5/go.mod h1:x2x+ZanJAhhG0vxU0nvW1WomfWD+qSB6tcMpP4shP50=
