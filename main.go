@@ -26,7 +26,16 @@ func main() {
 	for _, it := range doc.Document.Body.Items {
 		switch it.(type) {
 		case *docx.Paragraph: // printable
-			fmt.Println(it)
+			fmt.Println(it.(*docx.Paragraph).String())
 		}
+	}
+
+	f, err := os.Create("work/output.docx")
+	if err != nil {
+		panic(err)
+	}
+	_, err = doc.WriteTo(f)
+	if err != nil {
+		panic(err)
 	}
 }
