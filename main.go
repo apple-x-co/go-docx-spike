@@ -1,18 +1,23 @@
 package main
 
 import (
-	"github.com/gomutex/godocx"
+	"baliance.com/gooxml/document"
 	"log"
+	"os"
 )
 
 func main() {
-	document, err := godocx.OpenDocument("work/sample2.docx")
+	doc, err := document.Open("work/sample2.docx")
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	err = document.SaveTo("work/gomutex/godocx/output.docx")
+	f, err := os.Create("work/gooxml/document/output.docx")
 	if err != nil {
-		log.Fatal(err)
+		panic(err)
+	}
+	err = doc.Save(f)
+	if err != nil {
+		panic(err)
 	}
 }
